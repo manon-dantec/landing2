@@ -1,0 +1,312 @@
+head {
+	display: block;
+	align-items: center;
+	width: auto;
+}
+
+body {
+  	text-shadow: white 0px 0px 2px;
+  	font-size: 30px;
+	display: relative;
+	align-items: flex-start;
+	width: auto;
+}
+
+h1{
+	height: 150px;
+}
+
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Optima, sans-serif;
+	font-weight: 200;
+}
+
+nav {
+	width: 100%;
+	margin: 0 auto;
+	position: sticky;
+	top: 0px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+
+nav ul li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	position: relative;
+}
+
+nav ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav > ul li:hover .sous{
+	display: block;
+}
+
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+
+
+.sous li {
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+.sous a {
+	padding: 10px;
+	border-bottom: none;
+	font-size: 18px;
+}
+
+
+.sous {
+	display: none;
+	box-sizing: 0px 1px 2px #CCC;
+	background-color: black;
+	opacity: 70%;
+	opacity: 0,4;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+
+.conteneur {
+	margin: 50px 20px;
+	height: 1500px;
+}
+
+.header.logo {
+	text-align: left;
+	align-items: left;
+}
+
+.head.banner {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+}
+
+.list-category {
+	margin-top: 35px;
+	margin-left: 20px;
+	font-size: 35px;
+	text-shadow: black 0.15em 0.1em 0.15em;
+	text-align: center;
+	padding-top: 0px;
+	position: block;
+	width: stretch;
+}
+
+
+h2 {
+	margin-top: -60px; 
+	color: black;
+}
+
+.home-title-left{
+	font-family: Arial Narrow, sans-serif;
+	font-weight: 100;
+}
+
+
+
+
+.slides {
+	width: calc(360px * 3);
+	animation: glisse 20s infinite;
+	flex-shrink: 0;
+}
+
+
+.carousel {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	background-size: cover;
+	overflow-x: auto;
+	display: flex;
+	overflow-x: auto; 
+	margin-left: 10px;
+}
+
+@keyframes glisse {
+
+	0% {
+		transform: translateX(0);
+	}
+
+	3% {
+		transform: translateX(0);
+	}
+
+	13% {
+		transform: translateX(-500px);
+	}
+
+	16% {
+		transform: translateX(-500px);
+	}
+
+	26% {
+		transform: translateX(-1000px);
+	}
+
+	29% {
+		transform: translateX(-1000px);
+	}
+
+	39% {
+		transform: translateX(-1500px);
+	}
+
+	42% {
+		transform: translateX(-1500px);
+	}
+
+	52% {
+		transform: translateX(-1900px);
+	}
+
+	55% {
+		transform: translateX(-1900px);
+	}
+
+	65% {
+		transform: translateX(-1500px);
+	}
+
+	68% {
+		transform: translateX(-1500px);
+	}
+
+	78% {
+		transform: translateX(-1000px);
+	}
+
+	81% {
+		transform: translateX(-1000px);
+	}
+
+	91% {
+		transform: translateX(-500px);
+	}
+
+	94% {
+		transform: translateX(-500px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+
+
+}
+
+
+h4 {
+ 	margin-top: -40px;
+	color: black;
+}
+
+h5 {
+	margin-top: 100px;
+	width: 100%;
+}
+
+
+h6 {
+	margin-top: 40px;
+	color: black;
+	text-align: center;
+	word-spacing: 10px;
+}
+
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.réseaux {
+	color: black; 
+	justify-content: space-between;
+	align-items: center; 
+	margin: 10px;
+	padding: 10px;
+	display: flex;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+	border-radius: 6px;
+	background: beige;
+	font-size: 25px;
+}
+
+
+
+i.fas.fa-pen-fancy {
+    color: black;
+    font-size: 80;
+    text-align: center;
+    justify-content: center;
+	align-items: center; 
+	width: 150px;
+	border-radius: 6px;
+}
+
+i.fab.fa-instagram {
+    color: black;
+    text-align: center;
+    justify-content: center;
+	align-items: center; 
+	width: 150px;
+	border-radius: 6px;
+}
+
+i.fab.fa-linkedin-in {
+    color: black;
+    text-align: center;
+    justify-content: center;
+	align-items: center; 
+	width: 150px;
+	border-radius: 6px;
+}
+
+i.fab.fa-facebook {
+    color: black;
+    text-align: center;
+    justify-content: center;
+	align-items: center; 
+	width: 150px;
+	border-radius: 6px;
+}
+
+.typeform-widget{
+	align-items: center;
+	margin-top: 40px;
+}
+
+
+	
